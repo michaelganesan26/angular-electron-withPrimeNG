@@ -1,17 +1,32 @@
+
+$highlightColor: #6b6a69 ;
+
 .container {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: url(../../../assets/img/sidebar-1.jpg) repeat-x center fixed;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+  // -webkit-background-size: $bgSize;
+  // -moz-background-size: $bgSize ;
+  // -o-background-size: $bgSize;
+  // background-size: $bgSize;
 
   .title {
-    color: blueviolet;
-    margin:0;
-    padding:50px 20px;
+    color: $highlightColor;
+    margin: 0;
+    padding: 50px 20px;
+  }
+
+  .message{
+      color:$highlightColor;
+      margin: 0;
+
+
   }
 
 }
+
+
+
+
