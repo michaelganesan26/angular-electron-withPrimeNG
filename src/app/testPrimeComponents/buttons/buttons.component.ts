@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, ParamMap } from '@angular/router';
+import { Route } from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-buttons',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
   }
+
+  returnHome() {
+    this.router.navigate(['/home', { id: 'testbutton', foo: 'foo'}]);
+    console.log('Return to home');
+
+  }
+
+
+
+
 
 }

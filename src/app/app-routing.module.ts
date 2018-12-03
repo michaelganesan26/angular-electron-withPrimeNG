@@ -40,7 +40,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { useHash: true, enableTracing: true }) // enable tracing for debugging only!
+    RouterModule.forRoot(routes, { useHash: true, enableTracing: false }) // enable tracing for debugging only!
   ],
   exports: [RouterModule]
 })
