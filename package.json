@@ -21,7 +21,7 @@
     "postinstall:web": "node postinstall-web",
     "postinstall:electron": "node postinstall",
     "ng:live:reload": "ng serve --open --live-reload",
-    "ng": "ng",
+    "ng": "ng serve --port 8080 --open --live-reload --base-href '/'",
     "start": "npm run postinstall:electron && npm-run-all -p ng:serve electron:serve",
     "build": "npm run postinstall:electron && npm run electron:serve-tsc && ng build",
     "build:dev": "npm run build -- -c dev",
