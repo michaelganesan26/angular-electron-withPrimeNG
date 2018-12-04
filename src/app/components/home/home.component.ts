@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
     //  const data = this.route.paramMap.pipe(
     //     switchMap((params: ParamMap) => params.get('id')));
      let data = '';
-     this.route.params.subscribe(params =>{
+     this.route.params.subscribe(params => {
          data = params['id'];
      });
 

@@ -3,6 +3,7 @@ import '../polyfills';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
@@ -10,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 // PrimeNG Components
 import { ButtonModule } from 'primeng/button';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { CardModule } from 'primeng/card';
 
 
 
@@ -45,6 +48,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ButtonModule,
     HttpClientModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    SplitButtonModule,
+    CardModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
